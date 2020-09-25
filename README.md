@@ -1,6 +1,8 @@
 # Python-for-data-analysis
 Cours à l'ESILV en Datascience et IA.
+
 Analyse du dataset MDB-INSEE-V2.
+
 Ce dataset provient de data.gouv et décrit les activités économiques des communes récoltées par l'INSEE. Il y a 70 colonnes dans le fichier d'origine, j'en ai selectionné 4.
 
 Les questions auxquelles répond mon analyse sont:
