@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-#ce dataset provient de data.gouv et décrit les activités économiques des communes. Il y a 70 colonnes dans le fichier d'origine, j'en ai selectionné 4.
+#ce dataset provient de data.gouv et décrit les activités économiques des communes. Il y a 101 colonnes dans le fichier d'origine, j'en ai selectionné 4.
 df = pd.read_excel(r"C:\Users\ALBERIC\Downloads\MDB-INSEE-V2.xls",usecols=["Population","Nb Pharmacies et parfumerie","Evolution Pop %","Environnement Démographique"])
 
 print("5 premières lignes du dataset:")
