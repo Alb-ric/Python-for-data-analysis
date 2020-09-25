@@ -14,6 +14,8 @@ print(df.columns)
 print("colonnes du dataset:")
 for i in df.columns:
     print(i)
+    
+#classement du dataset par ordre de population décroissante.
 df_sorted = df.sort_values(by=["Population"],ascending=False)
 
 print(df_sorted.head())
@@ -46,10 +48,10 @@ for i in df["Environnement Démographique"]:
 print(environnements)
 
 
-print("graphe du nombre de pharmacies et parfumeries dans les 10 communes les plus peuplées:")
+print("courbe du nombre de pharmacies et parfumeries dans les communes classées par ordre de population décroissante:")
 df_sorted.plot(x="Population",y="Nb Pharmacies et parfumerie",title="nombre de pharmacies et parfumeries en fonction de la population (échelle 10e6)")
 plt.show()
 
-print("graphe du nombre de communes pour chaque type d'environnement: ")
+print("graphique à barres du nombre de communes pour chaque type d'environnement: ")
 plt.bar(environnements.keys(), environnements.values(), color='g')
 plt.show()
